@@ -7,6 +7,14 @@ using System.IO;
 
 public class TwitchConnect : MonoBehaviour
 {
+    public GameObject TopSlide;
+    public GameObject BottomSlide;
+    public GameObject HairSlide;
+    public GameObject ShoeSlide;
+
+
+
+
     /// <summary>
     /// BASIC TERMS
     //TCP stands for transmission Control Protocol
@@ -60,6 +68,8 @@ public class TwitchConnect : MonoBehaviour
         ConnectToTwitch();
     }
 
+
+
     void Update()
     {
         pingCounter += Time.deltaTime;
@@ -105,29 +115,34 @@ public class TwitchConnect : MonoBehaviour
                 //GAME CONTROLS
 
 
-                //if(msg == "a")
-                //{
-                //    Debug.Log("someone pressed A");
-                //    GameObject.FindObjectOfType<GameManager>().GetComponent<GameManager>().A_Pressed();
-                //}
+                if(msg == "A")
+                {
+                    Debug.Log("someone pressed A"); 
+                    Top topcode = TopSlide.GetComponent<Top>();
+                    topcode.APressed();
+                }
 
-                //if (msg == "d")
-                //{
-                //    Debug.Log("someone pressed D");
-                //    GameObject.FindObjectOfType<GameManager>().GetComponent<GameManager>().D_Pressed();
-                //}
+                if (msg == "D")
+                {
+                    Debug.Log("someone pressed D");
+                    Top topcode = TopSlide.GetComponent<Top>();
+                    topcode.DPressed();
+                }
 
-                //if (msg == "w")
-                //{
-                //    Debug.Log("someone pressed W");
-                //    GameObject.FindObjectOfType<GameManager>().GetComponent<GameManager>().W_Pressed();
-                //}
+                if (msg == "Q")
+                {
+                    Debug.Log("someone pressed Q");
+                    Bottom botcode = BottomSlide.GetComponent<Bottom>();
+                    botcode.QPressed();
+                }
 
-                //if (msg == "s")
-                //{
-                //    Debug.Log("someone pressed S");
-                //    GameObject.FindObjectOfType<GameManager>().GetComponent<GameManager>().S_Pressed();
-                //}
+                if (msg == "E")
+                {
+                    Debug.Log("someone pressed E");
+                    Bottom botcode = BottomSlide.GetComponent<Bottom>();
+                    botcode.EPressed();
+                }
+
             }
         }
     }
