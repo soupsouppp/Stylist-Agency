@@ -114,7 +114,7 @@ public class TwitchConnect : MonoBehaviour
 
                 //GAME CONTROLS
 
-
+                //top
                 if(msg == "A")
                 {
                     Debug.Log("someone pressed A"); 
@@ -129,6 +129,7 @@ public class TwitchConnect : MonoBehaviour
                     topcode.DPressed();
                 }
 
+                //bottom
                 if (msg == "Q")
                 {
                     Debug.Log("someone pressed Q");
@@ -143,6 +144,35 @@ public class TwitchConnect : MonoBehaviour
                     botcode.EPressed();
                 }
 
+                //hair
+                if (msg == "W")
+                {
+                    Debug.Log("someone pressed W");
+                    Hair haircode = HairSlide.GetComponent<Hair>();
+                    haircode.WPressed();
+                }
+
+                if (msg == "S")
+                {
+                    Debug.Log("someone pressed S");
+                    Hair haircode = HairSlide.GetComponent<Hair>();
+                    haircode.SPressed();
+                }
+
+                //shoes
+                if (msg == "Z")
+                {
+                    Debug.Log("someone pressed z");
+                    Shoes shoecode = ShoeSlide.GetComponent<Shoes>();
+                    shoecode.ZPressed();
+                }
+
+                if (msg == "C")
+                {
+                    Debug.Log("someone pressed C");
+                    Shoes shoecode = ShoeSlide.GetComponent<Shoes>();
+                    shoecode.CPressed();
+                }
             }
         }
     }
