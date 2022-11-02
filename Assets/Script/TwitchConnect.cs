@@ -72,6 +72,67 @@ public class TwitchConnect : MonoBehaviour
 
     void Update()
     {
+        //test controls
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Debug.Log("someone pressed A");
+            Top topcode = TopSlide.GetComponent<Top>();
+            topcode.APressed();
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            Debug.Log("someone pressed D");
+            Top topcode = TopSlide.GetComponent<Top>();
+            topcode.DPressed();
+        }
+
+        //bottom
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Debug.Log("someone pressed Q");
+            Bottom botcode = BottomSlide.GetComponent<Bottom>();
+            botcode.QPressed();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("someone pressed E");
+            Bottom botcode = BottomSlide.GetComponent<Bottom>();
+            botcode.EPressed();
+        }
+
+        //hair
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Debug.Log("someone pressed W");
+            Hair haircode = HairSlide.GetComponent<Hair>();
+            haircode.WPressed();
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            Debug.Log("someone pressed S");
+            Hair haircode = HairSlide.GetComponent<Hair>();
+            haircode.SPressed();
+        }
+
+        //shoes
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Debug.Log("someone pressed z");
+            Shoes shoecode = ShoeSlide.GetComponent<Shoes>();
+            shoecode.ZPressed();
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Debug.Log("someone pressed C");
+            Shoes shoecode = ShoeSlide.GetComponent<Shoes>();
+            shoecode.CPressed();
+        }
+        //////////////////////////////////////////////////////
+
         pingCounter += Time.deltaTime;
         if (pingCounter > 60)
         {

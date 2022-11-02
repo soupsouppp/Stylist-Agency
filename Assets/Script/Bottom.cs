@@ -25,13 +25,13 @@ public class Bottom : MonoBehaviour
 
     public void QPressed()
     {
-        Endpos = transform.position + new Vector3(3, 0, 0);
+        Endpos = transform.position + new Vector3(6, 0, 0);
         transform.position = Vector3.Lerp(Startpos, Endpos, slideSpeed);
     }
 
     public void EPressed()
     {
-        Endpos = transform.position + new Vector3(-3, 0, 0);
+        Endpos = transform.position + new Vector3(-6, 0, 0);
         transform.position = Vector3.Lerp(Startpos, Endpos, slideSpeed);
     }
 }

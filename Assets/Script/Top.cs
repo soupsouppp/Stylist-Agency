@@ -25,13 +25,13 @@ public class Top : MonoBehaviour
 
     public void APressed()
     {
-        Endpos = transform.position + new Vector3(3, 0, 0);
+        Endpos = transform.position + new Vector3(6, 0, 0);
         transform.position = Vector3.Lerp(Startpos, Endpos, slideSpeed);
     }
 
     public void DPressed()
     {
-        Endpos = transform.position + new Vector3(-3, 0, 0);
+        Endpos = transform.position + new Vector3(-6, 0, 0);
         transform.position = Vector3.Lerp(Startpos, Endpos, slideSpeed);
     }
 }

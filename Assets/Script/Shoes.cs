@@ -25,13 +25,13 @@ public class Shoes : MonoBehaviour
 
     public void ZPressed()
     {
-        Endpos = transform.position + new Vector3(3, 0, 0);
+        Endpos = transform.position + new Vector3(6, 0, 0);
         transform.position = Vector3.Lerp(Startpos, Endpos, slideSpeed);
     }
 
     public void CPressed()
     {
-        Endpos = transform.position + new Vector3(-3, 0, 0);
+        Endpos = transform.position + new Vector3(-6, 0, 0);
         transform.position = Vector3.Lerp(Startpos, Endpos, slideSpeed);
     }
 }
