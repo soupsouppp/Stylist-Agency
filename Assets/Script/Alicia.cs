@@ -12,6 +12,9 @@ public class Alicia : MonoBehaviour
     public bool wearingFormalBot;
     public bool wearingFormalHair;
 
+    public GameObject ReactionHappy;
+    public GameObject ReactionUnhappy;
+    public GameObject ReactionShy;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
