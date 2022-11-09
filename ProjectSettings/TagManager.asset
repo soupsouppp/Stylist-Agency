@@ -19,6 +19,10 @@ TagManager:
   - AliciaDislike
   - AliciaHuh
   - AliciaShy
+  - JamieLike
+  - JamieDislike
+  - JamieHuh
+  - JamieShy
   layers:
   - Default
   - TransparentFX
