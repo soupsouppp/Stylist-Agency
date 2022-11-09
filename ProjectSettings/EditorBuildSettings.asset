@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1- Alicia.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/2 - Ezra.unity
+    guid: 674ef925c5a4e3b46a05c77478ecfdad
+  - enabled: 1
+    path: Assets/Scenes/3- Jamie.unity
+    guid: 1eb4098f72cf520488721c47feef2e05
+  - enabled: 1
+    path: Assets/Scenes/4- Kaeya.unity
+    guid: 63f45aa50e5092f4c80d7fd49deb3e8e
+  - enabled: 1
+    path: Assets/Scenes/5 - Scarlet.unity
+    guid: 445e36eef17bb31478e140ff95d66024
+  - enabled: 1
+    path: Assets/Scenes/6 - Alexx.unity
+    guid: fc1e1e90200e8374e9f08f74260116db
   m_configObjects: {}
