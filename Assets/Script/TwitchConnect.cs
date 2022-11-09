@@ -44,7 +44,7 @@ public class TwitchConnect : MonoBehaviour
     string User = "soupsouppp";
 
     //copy and paste OAuth from     twitchapps.com/tmi
-    string OAuth = "oauth:evkile0m1gx5z83tu82eof3mi5gxzk";  //your OAuth is basically as good as a password, so you should make a new account before doing this
+    string OAuth = "oauth:kyzyqbmgc0sfolg6x4zz6zaqdec85h";  //your OAuth is basically as good as a password, so you should make a new account before doing this
 
     //this is the channel you want to connect to
     string Channel = "soupsouppp";
