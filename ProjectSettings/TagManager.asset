@@ -5,16 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - BlackShirt
-  - WhiteShirt
   - RedShirt
-  - BlueShirt
   - RedDress
   - RedSkirt
   - RedPants
   - BlackDress
   - BlackSkirt
   - BlackPants
-  - Heels
   - AliciaLike
   - AliciaDislike
   - AliciaHuh
@@ -27,6 +24,18 @@ TagManager:
   - EzraDislike
   - EzraShy
   - EzraHuh
+  - KaeyaLike
+  - KaeyaDislike
+  - KaeyaHuh
+  - KaeyaShy
+  - ScarletLike
+  - ScarletDislike
+  - ScarletHuh
+  - ScarletShy
+  - AlexLike
+  - AlexDislike
+  - AlexHuh
+  - AlexShy
   layers:
   - Default
   - TransparentFX
