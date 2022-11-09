@@ -8,9 +8,9 @@ public class Alicia : MonoBehaviour
     public bool wearingBlack;
     public bool wearingHeels;
 
-    public bool wearingFormalTop;
-    public bool wearingFormalBot;
-    public bool wearingFormalHair;
+    public bool Dislike;
+    public bool Question;
+    public bool Shy;
 
     public GameObject ReactionHappy;
     public GameObject ReactionUnhappy;
@@ -32,10 +32,21 @@ public class Alicia : MonoBehaviour
             wearingRed = true;
             
         }
+ 
 
-        if (other.CompareTag("Heels"))
+        if (other.CompareTag("AliciaDislike"))
         {
-            wearingHeels = true;
+            Dislike = true;
+        }
+
+        if (other.CompareTag("AliciaHuh"))
+        {
+            Question = true;
+        }
+
+        if (other.CompareTag("AliciaShy"))
+        {
+            Shy = true;
         }
 
     }
@@ -55,6 +66,22 @@ public class Alicia : MonoBehaviour
             wearingRed = false;
          
         }
+
+        if (other.CompareTag("AliciaDislike"))
+        {
+            Dislike = false;
+        }
+
+        if (other.CompareTag("AliciaHuh"))
+        {
+            Question = false;
+        }
+
+        if (other.CompareTag("AliciaHuh"))
+        {
+            Question = false;
+        }
+
     }
 
 
@@ -76,5 +103,31 @@ public class Alicia : MonoBehaviour
             ReactionHappy.SetActive(false);
         }
 
+        if (Dislike)
+        {
+            ReactionUnhappy.SetActive(true);
+        }
+        else
+        {
+            ReactionUnhappy.SetActive(false);
+        }
+
+        if (Question)
+        {
+            ReactionQuestion.SetActive(true);
+        }
+        else
+        {
+            ReactionQuestion.SetActive(false);
+        }
+
+        if (Shy)
+        {
+            ReactionShy.SetActive(true);
+        }
+        else
+        {
+            ReactionShy.SetActive(false);
+        }
     }
 }
