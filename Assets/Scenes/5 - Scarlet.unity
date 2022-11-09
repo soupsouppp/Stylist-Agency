@@ -1499,6 +1499,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2567d196bb2def048ab1f0f9561ab776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ReactionHappy: {fileID: 1146180421}
+  ReactionUnhappy: {fileID: 1403235346}
+  ReactionShy: {fileID: 1118746314}
+  ReactionQuestion: {fileID: 873260794}
+  Like: 0
+  Dislike: 0
+  Question: 0
+  Shy: 0
 --- !u!1 &171020087
 GameObject:
   m_ObjectHideFlags: 0
