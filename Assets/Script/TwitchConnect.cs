@@ -41,13 +41,13 @@ public class TwitchConnect : MonoBehaviour
     const int PORT = 6667;
 
     //put your twitch username here - make a new account for security reasons - i don't understand why but it's recommended
-    string User = "soupsouppp";
+    string User = "jandarza";
 
     //copy and paste OAuth from     twitchapps.com/tmi
     string OAuth = "oauth:kyzyqbmgc0sfolg6x4zz6zaqdec85h";  //your OAuth is basically as good as a password, so you should make a new account before doing this
 
     //this is the channel you want to connect to
-    string Channel = "soupsouppp";
+    string Channel = "jandarza";
 
     float pingCounter;
 
